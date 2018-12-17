@@ -1,0 +1,43 @@
+ol {
+  list-style: none;
+  counter-reset: list_counter;
+}
+li {
+  counter-increment: list_counter;
+}
+li::before {
+  
+  content: counter(list_counter) ;
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Calibri';
+}
+
+.shadow {
+  -webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+  }
+  .container {
+    margin: 0 auto;
+    margin-top: 50px;;
+  
+    background: #F2F2F2;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #fff inset,
+                -1px -1px 2px #fff inset;
+    border-radius: 3px/6px;         
+  }
